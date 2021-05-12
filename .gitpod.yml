@@ -2,6 +2,8 @@ image:
   file: .gitpod.dockerfile
 tasks:
  - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
+ - command: alias run='python3 manage.py runserver'
+ - command: alias add-commit='git add -A && git commit -m'
 vscode:
   extensions:
     - ms-python.python
